@@ -1,11 +1,11 @@
 import readline from 'readline-sync';
 import {questoes, msg} from './data.js';
 import {buscarPergunta, imprimePergunta, verificaResposta, acertoPerguntas, msgDeFelicitacoes} from './service.js';
-let i = 1;//Incremento
+let i = 1;//Incremento, 
 let c = 0; //Acertos
 
-const seuNome = readline.question('Digite seu nome! ');
-console.log('Seja Bem-vindo(a) ' +seuNome+ '!');
+const seuNome = readline.question('Digite seu nome: ');
+console.log(' Seja Bem-vindo jogador(a)!');
 
 do {
     let perguntaSelecionada = buscarPergunta(questoes);
@@ -25,6 +25,7 @@ do {
 let acertos = acertoPerguntas(c);
 let mensagens = msgDeFelicitacoes(msg, c);
 
-console.log('\nRespostas corretas : ' + c + '  Respostas erradas : '+ acertos);
+console.log('\nJogador(a): '+ seuNome);
+console.log('Respostas corretas : ' + c + '\nRespostas erradas : '+ acertos);
 console.log( mensagens);
 
