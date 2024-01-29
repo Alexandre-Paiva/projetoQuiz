@@ -4,7 +4,7 @@ import {buscarPergunta, imprimePergunta, verificaResposta, acertoPerguntas, msgD
 let i = 1;//Incremento, 
 let c = 0; //Acertos
 
-const seuNome = readline.question('Digite seu nome: ');
+const seuNome = readline.question('Digite seu nome: '); // Entrada de dados (respostas).
 console.log(' Seja Bem-vindo jogador(a)!');
 
 do {
@@ -14,10 +14,10 @@ do {
     let verificacao = verificaResposta(perguntaSelecionada, digitarResposta);
         
         if( verificacao ) {
-            console.log('Resposta: acertou miseravel');
+            console.log('Resposta: acertou !');
             c+=1
         } else {
-            console.log('Resposta: errooo! ');
+            console.log('Resposta: errou! ');
         }
         i++
 } while(i <= 10);
