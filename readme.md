@@ -18,7 +18,7 @@ Para executar este projeto, você precisará ter o Node.js instalado em sua máq
    ```bash
    git clone https://github.com/Alexandre-Paiva/projetoQuiz
    ```
-2. **Instale as dependências necessárias** (se houver):
+2. **Instale as dependências necessárias**:
    ```bash
     express: 4.18.2,
     readline-sync: 1.4.10
