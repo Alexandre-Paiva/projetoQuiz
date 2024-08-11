@@ -1,6 +1,3 @@
-Aqui está o texto do `README.md` em Markdown formatado corretamente:
-
-```markdown
 # Quiz de Fatos Históricos
 
 Este projeto é um quiz interativo que desafia os usuários a responderem perguntas sobre fatos históricos importantes. O quiz seleciona aleatoriamente perguntas sobre eventos significativos ao longo da história e oferece uma avaliação ao final com base na pontuação do jogador.
