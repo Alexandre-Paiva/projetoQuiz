@@ -10,7 +10,7 @@ console.log(' Seja Bem-vindo jogador(a)!');
 do {
     let perguntaSelecionada = buscarPergunta(questoes);
         perguntaSelecionada.forEach(imprimePergunta);
-    let digitarResposta = readline.question(`Digite a resposta número ${i}:`);
+    let digitarResposta = readline.question(`Digite a resposta numero ${i}:`);
     let verificacao = verificaResposta(perguntaSelecionada, digitarResposta);
         
         if( verificacao ) {
