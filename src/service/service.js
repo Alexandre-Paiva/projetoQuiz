@@ -1,4 +1,4 @@
-import {questoes, msg} from './data.js';
+import {questoes, msg} from '../data/data.js';
 
 const organizaPerguntas = (questoes) => {
     return questoes ;

@@ -1,6 +1,6 @@
 import readline from 'readline-sync';
-import {questoes, msg} from './data.js';
-import {buscarPergunta, imprimePergunta, verificaResposta, acertoPerguntas, msgDeFelicitacoes} from './service.js';
+import {questoes, msg} from './data/data.js';
+import {buscarPergunta, imprimePergunta, verificaResposta, acertoPerguntas, msgDeFelicitacoes} from './service/service.js';
 let i = 1;//Incremento, 
 let c = 0; //Acertos
 
@@ -10,7 +10,7 @@ console.log(' Seja Bem-vindo jogador(a)!');
 do {
     let perguntaSelecionada = buscarPergunta(questoes);
         perguntaSelecionada.forEach(imprimePergunta);
-    let digitarResposta = readline.question('Digite a resposta :');
+    let digitarResposta = readline.question(`Digite a resposta número ${i}:`);
     let verificacao = verificaResposta(perguntaSelecionada, digitarResposta);
         
         if( verificacao ) {
